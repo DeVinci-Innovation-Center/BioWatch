@@ -1,14 +1,30 @@
 # BioWatch
 The BioWatch is a smartwatch prototyping for developing wearable biosensors and real-time data visualization. This electronic project aims at **facilitating the integration (or wireless connection) in a smartwatch of innovative wearable sensors**. The BioWatch allows rapid implementation of minimally invasive electrochemical biosensors. 
 
+<p align="center">
+  <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/bioWatch-V1.0.png?raw=true "BioWatch V1.0">
+</p>
+
 ***
+# Requierments
 
-# Biosensor-to-smartwatch wireless communication
-This project includes a wireless communication solution between an ec-Flex from [Zimmer&Peacock](https://www.zimmerpeacocktech.com/products/) and a homemade smartwatch. Find the Quickstart to connect and configure an ecFlex to the BioWatch on the from [Biosensor-to-smartwatch_wireless_communication GitHub page](https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication). 
-
-***
-
+To build the BioWatch you need the following components:
+* A [CG9A01 round LCD screen](https://www.kubii.fr/ecrans-supports/3242-ecran-rond-lcd-1-28-pouces-3272496305625.html),
+* An [ESP8266 WeMos D1 mini](https://www.amazon.fr/ESP8266-ESP-12F-D%C3%A9veloppement-NodeMCU-Compatible/dp/B093G72SHN/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3EZYZ6R68PT6Z&keywords=wemos%2Bd1%2Bmini&qid=1677507885&s=electronics&sprefix=wemos%2Bd1%2Bmini%2Celectronics%2C98&sr=1-2&th=1),
+* A [battery shield](https://www.amazon.fr/AZDelivery-Batterie-lithium-Arduino-incluant/dp/B07XG817P8/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=QAPOVML7V5FP&keywords=wemos+d1+mini+battery+shield&qid=1677508193&s=electronics&sprefix=wemos+d1+mini+battery+shield%2Celectronics%2C97&sr=1-1-catcorr) for WeMos D1 mini,
+* A 3.7V 250mAh battery ref [LP502030](https://www.amazon.fr/EEMB-Batterie-Rechargeable-Navigation-Enregistreur/dp/B08FD3V6TF).
+  
 # Quickstart
+
+**1. Download and 3D-print the [watch case](https://github.com/DeVinci-Innovation-Center/BioWatch/tree/main/hardware) of your choice.** 
+*Version 1.0 includes the battery in the case, while V1.1 provides for the battery to be integrated in the bracelet.*
+
+**2. Assembled the shield with the WeMos. Weld the GC9A01 using 3 cm wires.
+
+
+
+
+***
 
 **1. Download the project.** 
 
@@ -31,34 +47,25 @@ This project includes a wireless communication solution between an ec-Flex from 
 * Define the port to use.
 * Run the code.
 
-# Functional diagram
+# System overview
 
 <p align="center">
-  <img src=https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication/blob/main/images/functional_diagram.png?raw=true "Functional diagram">
+  <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/BioWatch-V1-V2-schemes.png?raw=true "BioWatch V1 and V2 overview">
 </p>
 
-# Deployment diagram
+## Biosensor-to-smartwatch wireless communication
+This project includes a wireless communication solution between an ec-Flex from [Zimmer&Peacock](https://www.zimmerpeacocktech.com/products/) and a homemade smartwatch. Find the Quickstart to connect and configure an ecFlex to the BioWatch on the from [Biosensor-to-smartwatch_wireless_communication GitHub page](https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication), and [a tutorial to buid a wearable glucose sensor connected to the BioWatch](https://dvic.devinci.fr/tutorial/glucose-biosensor). 
+
+
+# Project advancement & Future works
+
+- [x] Write an Arduino script using the GFX library that displays time, glucose concentration, and temperature (numerical values) on the GC9A01 screen.
+- [x] Write an Arduino script using the GFX library that displays a curve representing the glucose concentration evolution on the GC9A01 screen.
+- [x] Assemble the BioWatch V1.0 and V1.1. 
+- [ ] Design the BioWatch V2 PCB.
+- [ ] Write a python script to read the database.
+
 
 <p align="center">
-  <img src=https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication/blob/main/images/deployment_diagramV2.png?raw=true "Deployment diagram">
-</p>
-
-# Requierments
-
-### Hardware
-You need an ec-Flex board, an ec-Flex battery and a glucose biosensor from [Zimmer&Peacock products website](https://www.zimmerpeacocktech.com/products/). A tutorial to build the smartwatch is available [here](https://dvic.devinci.fr/tutorial/smartwatch). You have to replace the Arduino Uno by a WeMos D1 mini. 
-
-### Software
-To run the programs, you need bleak, asyncio, sqlite3, multiprocessing, struct, os, socket, and time Python modules. The PyBluez Python extension module is also requiered.
-
-# Project advancement
-All the scripts are working and successfully transmit the data from the ec-Flex to the laptop to the smartwatch. The data storage on a local database is still under development.
-
-### Software future works
-* Write a python script to read the database.
-* Write an Arduino script using the GFX library that displays time, glucose concentration, and temperature (numerical values) on the GC9A01 screen.
-* Write an Arduino script using the GFX library that displays a curve representing the glucose concentration evolution on the GC9A01 screen.
-
-<p align="center">
-  <img src=https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication/blob/main/images/wearable_biosensing_system.jpg?raw=true "ec-Flex with glucose biosensor, sweat patch and Li-Po battery">
+  <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/BioWatch-photo-white-box-profil.png?raw=true>
 </p>
