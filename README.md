@@ -6,6 +6,13 @@ The BioWatch is a smartwatch prototyping for developing wearable biosensors and 
 </p>
 
 ***
+
+# System overview
+
+<p align="center">
+  <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/BioWatch-V1-V2-schemes.png?raw=true "BioWatch V1 and V2 overview">
+</p>
+
 # Requierments
 
 To build the BioWatch you need the following components:
@@ -17,11 +24,19 @@ To build the BioWatch you need the following components:
 # Quickstart
 
 **1. Download and 3D-print the [watch case](https://github.com/DeVinci-Innovation-Center/BioWatch/tree/main/hardware) of your choice.** 
+
 *Version 1.0 includes the battery in the case, while V1.1 provides for the battery to be integrated in the bracelet.*
 
-**2. Assembled the shield with the WeMos. Weld the GC9A01 using 3 cm wires.
+**2. Assembled the shield with the WeMos. Weld the GC9A01 using wires with the following dimensions:**
+<p align="center">
+  <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/CG9A01-to-WeMos.jpeg?raw=true "Assembling the GC9A01 with the WeMos">
+</p>
 
+**3. Upload a code in the [graphic_design folder](https://github.com/DeVinci-Innovation-Center/BioWatch/tree/main/ecflex-to-biowatch_wireless_communication/biowatch_client/graphic_design) to program the GC9A01 driver. [print_graph-and_time](https://github.com/DeVinci-Innovation-Center/BioWatch/tree/main/ecflex-to-biowatch_wireless_communication/biowatch_client/graphic_design/print_graph_and_time) is the functional interface to print sensor data.**
 
+**4. Insert the charged battery into the JST port of the shield and carefully insert the assembly into the case.**
+
+**5. Close the case with the lid and add a standard watchband.**
 
 
 ***
@@ -47,13 +62,7 @@ To build the BioWatch you need the following components:
 * Define the port to use.
 * Run the code.
 
-# System overview
-
-<p align="center">
-  <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/BioWatch-V1-V2-schemes.png?raw=true "BioWatch V1 and V2 overview">
-</p>
-
-## Biosensor-to-smartwatch wireless communication
+# Biosensor-to-smartwatch wireless communication
 This project includes a wireless communication solution between an ec-Flex from [Zimmer&Peacock](https://www.zimmerpeacocktech.com/products/) and a homemade smartwatch. Find the Quickstart to connect and configure an ecFlex to the BioWatch on the from [Biosensor-to-smartwatch_wireless_communication GitHub page](https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication), and [a tutorial to buid a wearable glucose sensor connected to the BioWatch](https://dvic.devinci.fr/tutorial/glucose-biosensor). 
 
 
@@ -61,9 +70,12 @@ This project includes a wireless communication solution between an ec-Flex from 
 
 - [x] Write an Arduino script using the GFX library that displays time, glucose concentration, and temperature (numerical values) on the GC9A01 screen.
 - [x] Write an Arduino script using the GFX library that displays a curve representing the glucose concentration evolution on the GC9A01 screen.
-- [x] Assemble the BioWatch V1.0 and V1.1. 
+- [x] Assemble the BioWatch V1.0.
+- [x] Minimize the size of the BioWatch by assembling the BioWatch V1.1 with the battery in the bracelet. 
+- [x] Connect the ec-Flex to the BioWatch.
+- [x] Design the BioWatch interface. Print time, date, sensor value and history.
 - [ ] Design the BioWatch V2 PCB.
-- [ ] Write a python script to read the database.
+- [ ] Integrate a modular pulse sensor to the BioWatch V2 and read the data in real-time.
 
 
 <p align="center">
