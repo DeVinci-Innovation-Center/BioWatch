@@ -1,0 +1,40 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model LMP91000SD_NOPB
+#/277479/1017059/2.49/15/3/Integrated Circuit
+DEF LMP91000SD_NOPB IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "LMP91000SD_NOPB" 1050 200 50 H V L CNN
+F2 "SON50P400X400X80-15N" 1050 100 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/lmp91000.pdf" 1050 0 50 H I L CNN
+F4 "Configurable AFE Potentiostat for Low-Power Chemical Sensing Applications" 1050 -100 50 H I L CNN "Description"
+F5 "0.8" 1050 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LMP91000SD/NOPB" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "926-LMP91000SD/NOPB" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LMP91000SD-NOPB?qs=OYMYEaN9QmAbnRLMZUYFgA%3D%3D" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "LMP91000SD/NOPB" 1050 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/lmp91000sdnopb/texas-instruments?region=nac" 1050 -800 50 H I L CNN "Arrow Price/Stock"
+F12 "" 1050 -900 50 H I L CNN "Mouser Testing Part Number"
+F13 "" 1050 -1000 50 H I L CNN "Mouser Testing Price/Stock"
+DRAW
+X DGND 1 0 0 200 R 50 50 0 0 W
+X MENB 2 0 -100 200 R 50 50 0 0 I
+X SCL 3 0 -200 200 R 50 50 0 0 I
+X SDA 4 0 -300 200 R 50 50 0 0 B
+X NC 5 0 -400 200 R 50 50 0 0 N
+X VDD 6 0 -500 200 R 50 50 0 0 W
+X AGND 7 0 -600 200 R 50 50 0 0 W
+X DAP 15 600 -1200 200 U 50 50 0 0 W
+X CE 14 1200 0 200 L 50 50 0 0 I
+X RE 13 1200 -100 200 L 50 50 0 0 I
+X WE 12 1200 -200 200 L 50 50 0 0 I
+X VREF 11 1200 -300 200 L 50 50 0 0 I
+X C1 10 1200 -400 200 L 50 50 0 0 P
+X C2 9 1200 -500 200 L 50 50 0 0 P
+X VOUT 8 1200 -600 200 L 50 50 0 0 O
+P 5 0 1 6 200 100 1000 100 1000 -1000 200 -1000 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

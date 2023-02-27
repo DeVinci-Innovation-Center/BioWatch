@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADC161S626CIMME_NOPB
+D Texas Instruments ADC161S626CIMME/NOPB, 16 bit Serial ADC, Differential Input, 10-Pin VSSOP
+K
+F http://www.ti.com/lit/gpn/adc161s626
+$ENDCMP
+#
+#End Doc Library

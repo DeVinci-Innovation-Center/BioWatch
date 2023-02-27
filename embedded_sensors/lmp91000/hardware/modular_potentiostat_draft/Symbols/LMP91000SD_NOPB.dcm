@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LMP91000SD_NOPB
+D Configurable AFE Potentiostat for Low-Power Chemical Sensing Applications
+K
+F http://www.ti.com/lit/ds/symlink/lmp91000.pdf
+$ENDCMP
+#
+#End Doc Library
