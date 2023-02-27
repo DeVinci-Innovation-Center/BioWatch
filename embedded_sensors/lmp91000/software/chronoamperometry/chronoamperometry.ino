@@ -50,7 +50,7 @@ delay(50);
 
 void loop()
 { 
-  runAmp(6, 0, 5000, 66, 5000, 250, 5000, 80, 6); 
+  runAmp(6, 0, 5000, 66, 5000, 250, 5000, 1000, 6); 
   delay(2000); 
 }
 
@@ -88,10 +88,14 @@ void runAmp(uint8_t user_gain, int16_t pre_stepV, uint32_t quietTime, int16_t v1
     if (voltageArray[i] < 0) pStat.setNegBias();
     else pStat.setPosBias();
 
-    unsigned long startTime = millis();
+//    unsigned long startTime = millis();
     pStat.setBias(abs(voltageArray[i]));
-    while (millis() - startTime < timeArray[i]) {
-      //Serial.print((uint16_t)(opVolt*TIA_BIAS[abs(voltageArray[i])]*(voltageArray[i]/abs(voltageArray[i]))));
+    while (true) {
+      if (voltageArray[i] != 0) {
+        Serial.print((uint16_t)(opVolt*TIA_BIAS[abs(voltageArray[i])]*(voltageArray[i]/abs(voltageArray[i]))));
+    } else {
+        Serial.print("0");
+    }
       Serial.print(",");
       Serial.print(millis());
       Serial.print(",");
@@ -100,7 +104,6 @@ void runAmp(uint8_t user_gain, int16_t pre_stepV, uint32_t quietTime, int16_t v1
       delay(1000);
     }
   }
-  //End at 0V
   pStat.setBias(0);
 }
 
