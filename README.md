@@ -5,8 +5,6 @@ The BioWatch is a smartwatch prototyping for developing wearable biosensors and 
   <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/bioWatch-V1.0.png?raw=true "BioWatch V1.0">
 </p>
 
-***
-
 # System overview
 
 <p align="center">
@@ -39,31 +37,8 @@ To build the BioWatch you need the following components:
 **5. Close the case with the lid and add a standard watchband.**
 
 
-***
-
-**1. Download the project.** 
-
-**2. In in the [get_ecflex_charac.py](https://github.com/DeVinci-Innovation-Center/Smartwatch/blob/main/get_ecflex_charac.py) script:**
-* Enter the MAC address of the ec-Flex device.
-* Run the code.
-* Recover the addresses of handles 17, 21, 24, 27, 30, 96, and 99 in the vendor service. 
-
-**3. In the [server.py](https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication/blob/main/biosensor/server.py) script:**
-* Define the port to use.
-
-**4. In the [get_ecflex_data.py](https://github.com/DeVinci-Innovation-Center/Smartwatch/blob/main/get_ecflex_data.py) script:**
-* Enter the handles addresses.
-* Fill the access path of the database.db and schema.sql files.
-* Run the code.
-
-**5. In the [wifi_client.ino](https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication/blob/main/smartwatch/wifi_client/wifi_client.ino) script:**
-* Define your network SSID and password.
-* Enter your domain.
-* Define the port to use.
-* Run the code.
-
 # Biosensor-to-smartwatch wireless communication
-This project includes a wireless communication solution between an ec-Flex from [Zimmer&Peacock](https://www.zimmerpeacocktech.com/products/) and a homemade smartwatch. Find the Quickstart to connect and configure an ecFlex to the BioWatch on the from [Biosensor-to-smartwatch_wireless_communication GitHub page](https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication), and [a tutorial to buid a wearable glucose sensor connected to the BioWatch](https://dvic.devinci.fr/tutorial/glucose-biosensor). 
+This project includes a wireless communication solution between an ec-Flex from [Zimmer&Peacock](https://www.zimmerpeacocktech.com/products/) and a homemade smartwatch. Find the Quickstart to connect and configure an ecFlex to the BioWatch on the from [Biosensor-to-smartwatch_wireless_communication GitHub page](https://github.com/DeVinci-Innovation-Center/Biosensor-to-smartwatch_wireless_communication), and [a tutorial](https://dvic.devinci.fr/tutorial/glucose-biosensor) to buid a wearable glucose sensor connected to the BioWatch.
 
 
 # Project advancement & Future works
@@ -77,6 +52,7 @@ This project includes a wireless communication solution between an ec-Flex from 
 - [ ] Design the BioWatch V2 PCB.
 - [ ] Integrate a modular pulse sensor to the BioWatch V2 and read the data in real-time.
 
+***
 
 <p align="center">
   <img src=https://github.com/DeVinci-Innovation-Center/BioWatch/blob/main/images/BioWatch-photo-white-box-profil.png?raw=true>
